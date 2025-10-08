@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)https://chat.z.ai/c/a9e92406-3320-43f6-8218-0618b0833faf -->
+<html lang="en-US" class="light" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>.ͼ1.cm-focused {outline: 1px dotted #212121;}
+.ͼ1 {position: relative !important; box-sizing: border-box; display: flex !important; flex-direction: column;}
+.ͼ1 .cm-scroller {display: flex !important; align-items: flex-start !important; font-family: monospace; line-height: 1.4; height: 100%; overflow-x: auto; position: relative; z-index: 0; overflow-anchor: none;}
+.ͼ1 .cm-content[contenteditable=true] {-webkit-user-modify: read-write-plaintext-only;}
+.ͼ1 .cm-content {margin: 0; flex-grow: 2; flex-shrink: 0; display: block; white-space: pre; word-wrap: normal; box-sizing: border-box; min-height: 100%; padding: 4px 0; outline: none;}
+.ͼ1 .cm-lineWrapping {white-space: pre-wrap; white-space: break-spaces; word-break: break-word; overflow-wrap: anywhere; flex-shrink: 1;}
+.ͼ2 .cm-content {caret-color: black;}
+.ͼ3 .cm-content {caret-color: white;}
+.ͼ1 .cm-line {display: block; padding: 0 2px 0 6px;}
+.ͼ1 .cm-layer > * {position: absolute;}
+.ͼ1 .cm-layer {position: absolute; left: 0; top: 0; contain: size style;}
+.ͼ2 .cm-selectionBackground {background: #d9d9d9;}
+.ͼ3 .cm-selectionBackground {background: #222;}
+.ͼ2.cm-focused > .cm-scroller > .cm-selectionLayer .cm-selectionBackground {background: #d7d4f0;}
+.ͼ3.cm-focused > .cm-scroller > .cm-selectionLayer .cm-selectionBackground {background: #233;}
+.ͼ1 .cm-cursorLayer {pointer-events: none;}
+.ͼ1.cm-focused > .cm-scroller > .cm-cursorLayer {animation: steps(1) cm-blink 1.2s infinite;}
+@keyframes cm-blink {50% {opacity: 0;}}
+@keyframes cm-blink2 {50% {opacity: 0;}}
+.ͼ1 .cm-cursor, .ͼ1 .cm-dropCursor {border-left: 1.2px solid black; margin-left: -0.6px; pointer-events: none;}
+.ͼ1 .cm-cursor {display: none;}
+.ͼ3 .cm-cursor {border-left-color: #ddd;}
+.ͼ1 .cm-dropCursor {position: absolute;}
+.ͼ1.cm-focused > .cm-scroller > .cm-cursorLayer .cm-cursor {display: block;}
+.ͼ1 .cm-iso {unicode-bidi: isolate;}
+.ͼ1 .cm-announced {position: fixed; top: -10000px;}
+@media print {.ͼ1 .cm-announced {display: none;}}
+.ͼ2 .cm-activeLine {background-color: #cceeff44;}
+.ͼ3 .cm-activeLine {background-color: #99eeff33;}
+.ͼ2 .cm-specialChar {color: red;}
+.ͼ3 .cm-specialChar {color: #f78;}
+.ͼ1 .cm-gutters {flex-shrink: 0; display: flex; height: 100%; box-sizing: border-box; inset-inline-start: 0; z-index: 200;}
+.ͼ2 .cm-gutters {background-color: #f5f5f5; color: #6c6c6c; border-right: 1px solid #ddd;}
+.ͼ3 .cm-gutters {background-color: #333338; color: #ccc;}
+.ͼ1 .cm-gutter {display: flex !important; flex-direction: column; flex-shrink: 0; box-sizing: border-box; min-height: 100%; overflow: hidden;}
+.ͼ1 .cm-gutterElement {box-sizing: border-box;}
+.ͼ1 .cm-lineNumbers .cm-gutterElement {padding: 0 3px 0 5px; min-width: 20px; text-align: right; white-space: nowrap;}
+.ͼ2 .cm-activeLineGutter {background-color: #e2f2ff;}
+.ͼ3 .cm-activeLineGutter {background-color: #222227;}
+.ͼ1 .cm-panels {box-sizing: border-box; position: sticky; left: 0; right: 0; z-index: 300;}
+.ͼ2 .cm-panels {background-color: #f5f5f5; color: black;}
+.ͼ2 .cm-panels-top {border-bottom: 1px solid #ddd;}
+.ͼ2 .cm-panels-bottom {border-top: 1px solid #ddd;}
+.ͼ3 .cm-panels {background-color: #333338; color: white;}
+.ͼ1 .cm-tab {display: inline-block; overflow: hidden; vertical-align: bottom;}
+.ͼ1 .cm-widgetBuffer {vertical-align: text-top; height: 1em; width: 0; display: inline;}
+.ͼ1 .cm-placeholder {color: #888; display: inline-block; vertical-align: top;}
+.ͼ1 .cm-highlightSpace {background-image: radial-gradient(circle at 50% 55%, #aaa 20%, transparent 5%); background-position: center;}
+.ͼ1 .cm-highlightTab {background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="20"><path stroke="%23888" stroke-width="1" fill="none" d="M1 10H196L190 5M190 15L196 10M197 4L197 16"/></svg>'); background-size: auto 100%; background-position: right 90%; background-repeat: no-repeat;}
+.ͼ1 .cm-trailingSpace {background-color: #ff332255;}
+.ͼ1 .cm-button {vertical-align: middle; color: inherit; font-size: 70%; padding: .2em 1em; border-radius: 1px;}
+.ͼ2 .cm-button:active {background-image: linear-gradient(#b4b4b4, #d0d3d6);}
+.ͼ2 .cm-button {background-image: linear-gradient(#eff1f5, #d9d9df); border: 1px solid #888;}
+.ͼ3 .cm-button:active {background-image: linear-gradient(#111, #333);}
+.ͼ3 .cm-button {background-image: linear-gradient(#393939, #111); border: 1px solid #888;}
+.ͼ1 .cm-textfield {vertical-align: middle; color: inherit; font-size: 70%; border: 1px solid silver; padding: .2em .5em;}
+.ͼ2 .cm-textfield {background-color: white;}
+.ͼ3 .cm-textfield {border: 1px solid #555; background-color: inherit;}
+.ͼ1 .cm-selectionMatch {background-color: #99ff7780;}
+.ͼ1 .cm-searchMatch .cm-selectionMatch {background-color: transparent;}
+.ͼ1 .cm-tooltip.cm-tooltip-autocomplete > ul > li, .ͼ1 .cm-tooltip.cm-tooltip-autocomplete > ul > completion-section {padding: 1px 3px; line-height: 1.2;}
+.ͼ1 .cm-tooltip.cm-tooltip-autocomplete > ul > li {overflow-x: hidden; text-overflow: ellipsis; cursor: pointer;}
+.ͼ1 .cm-tooltip.cm-tooltip-autocomplete > ul > completion-section {display: list-item; border-bottom: 1px solid silver; padding-left: 0.5em; opacity: 0.7;}
+.ͼ1 .cm-tooltip.cm-tooltip-autocomplete > ul {font-family: monospace; white-space: nowrap; overflow: hidden auto; max-width: 700px; max-width: min(700px, 95vw); min-width: 250px; max-height: 10em; height: 100%; list-style: none; margin: 0; padding: 0;}
+.ͼ2 .cm-tooltip-autocomplete ul li[aria-selected] {background: #17c; color: white;}
+.ͼ2 .cm-tooltip-autocomplete-disabled ul li[aria-selected] {background: #777;}
+.ͼ3 .cm-tooltip-autocomplete ul li[aria-selected] {background: #347; color: white;}
+.ͼ3 .cm-tooltip-autocomplete-disabled ul li[aria-selected] {background: #444;}
+.ͼ1 .cm-completionListIncompleteTop:before, .ͼ1 .cm-completionListIncompleteBottom:after {content: "···"; opacity: 0.5; display: block; text-align: center;}
+.ͼ1 .cm-tooltip.cm-completionInfo {position: absolute; padding: 3px 9px; width: max-content; max-width: 400px; box-sizing: border-box; white-space: pre-line;}
+.ͼ1 .cm-completionInfo.cm-completionInfo-left {right: 100%;}
+.ͼ1 .cm-completionInfo.cm-completionInfo-right {left: 100%;}
+.ͼ1 .cm-completionInfo.cm-completionInfo-left-narrow {right: 30px;}
+.ͼ1 .cm-completionInfo.cm-completionInfo-right-narrow {left: 30px;}
+.ͼ2 .cm-snippetField {background-color: #00000022;}
+.ͼ3 .cm-snippetField {background-color: #ffffff22;}
+.ͼ1 .cm-snippetFieldPosition {vertical-align: text-top; width: 0; height: 1.15em; display: inline-block; margin: 0 -0.7px -.7em; border-left: 1.4px dotted #888;}
+.ͼ1 .cm-completionMatchedText {text-decoration: underline;}
+.ͼ1 .cm-completionDetail {margin-left: 0.5em; font-style: italic;}
+.ͼ1 .cm-completionIcon {font-size: 90%; width: .8em; display: inline-block; text-align: center; padding-right: .6em; opacity: 0.6; box-sizing: content-box;}
+.ͼ1 .cm-completionIcon-function:after, .ͼ1 .cm-completionIcon-method:after {content: 'ƒ';}
+.ͼ1 .cm-completionIcon-class:after {content: '○';}
+.ͼ1 .cm-completionIcon-interface:after {content: '◌';}
+.ͼ1 .cm-completionIcon-variable:after {content: '𝑥';}
+.ͼ1 .cm-completionIcon-constant:after {content: '𝐶';}
+.ͼ1 .cm-completionIcon-type:after {content: '𝑡';}
+.ͼ1 .cm-completionIcon-enum:after {content: '∪';}
+.ͼ1 .cm-completionIcon-property:after {content: '□';}
+.ͼ1 .cm-completionIcon-keyword:after {content: '🔑︎';}
+.ͼ1 .cm-completionIcon-namespace:after {content: '▢';}
+.ͼ1 .cm-completionIcon-text:after {content: 'abc'; font-size: 50%; vertical-align: middle;}
+.ͼ1 .cm-tooltip {z-index: 500; box-sizing: border-box;}
+.ͼ2 .cm-tooltip {border: 1px solid #bbb; background-color: #f5f5f5;}
+.ͼ2 .cm-tooltip-section:not(:first-child) {border-top: 1px solid #bbb;}
+.ͼ3 .cm-tooltip {background-color: #333338; color: white;}
+.ͼ1 .cm-tooltip-arrow:before, .ͼ1 .cm-tooltip-arrow:after {content: ''; position: absolute; width: 0; height: 0; border-left: 7px solid transparent; border-right: 7px solid transparent;}
+.ͼ1 .cm-tooltip-above .cm-tooltip-arrow:before {border-top: 7px solid #bbb;}
+.ͼ1 .cm-tooltip-above .cm-tooltip-arrow:after {border-top: 7px solid #f5f5f5; bottom: 1px;}
+.ͼ1 .cm-tooltip-above .cm-tooltip-arrow {bottom: -7px;}
+.ͼ1 .cm-tooltip-below .cm-tooltip-arrow:before {border-bottom: 7px solid #bbb;}
+.ͼ1 .cm-tooltip-below .cm-tooltip-arrow:after {border-bottom: 7px solid #f5f5f5; top: 1px;}
+.ͼ1 .cm-tooltip-below .cm-tooltip-arrow {top: -7px;}
+.ͼ1 .cm-tooltip-arrow {height: 7px; width: 14px; position: absolute; z-index: -1; overflow: hidden;}
+.ͼ3 .cm-tooltip .cm-tooltip-arrow:before {border-top-color: #333338; border-bottom-color: #333338;}
+.ͼ3 .cm-tooltip .cm-tooltip-arrow:after {border-top-color: transparent; border-bottom-color: transparent;}
+.ͼ1.cm-focused .cm-matchingBracket {background-color: #328c8252;}
+.ͼ1.cm-focused .cm-nonmatchingBracket {background-color: #bb555544;}
+.ͼ1 .cm-foldPlaceholder {background-color: #eee; border: 1px solid #ddd; color: #888; border-radius: .2em; margin: 0 1px; padding: 0 1px; cursor: pointer;}
+.ͼ1 .cm-foldGutter span {padding: 0 1px; cursor: pointer;}
+.ͼ5l {color: #8E908C;}
+.ͼ5m {color: #C82829;}
+.ͼ5n {color: #F5871F;}
+.ͼ5o {color: #C99E00;}
+.ͼ5p {color: #718C00;}
+.ͼ5q {color: #3E999F;}
+.ͼ5r {color: #4271AE;}
+.ͼ5s {color: #8959A8;}
+.ͼ5t {color: #4D4D4C;}
+.ͼ5k {background-color: #FFFFFF; color: #4D4D4C;}
+.ͼ5k .cm-content {caret-color: #AEAFAD;}
+.ͼ5k .cm-cursor, .ͼ5k .cm-dropCursor {border-left-color: #AEAFAD;}
+.ͼ5k.cm-focused .cm-selectionBackgroundm .cm-selectionBackground, .ͼ5k .cm-content ::selection {background-color: #D6D6D6;}
+.ͼ5k .cm-activeLine {background-color: #EFEFEF;}
+.ͼ5k .cm-gutters {background-color: #FFFFFF; color: #4D4D4C80;}
+.ͼ5k .cm-activeLineGutter {background-color: #EFEFEF;}
+.ͼ5v {font-size: 14px;}
+.ͼ5v .cm-scroller {z-index: 10;}
+.ͼ5v .cm-lineNumbers .cm-gutterElement {padding-left: 13px;}
+.ͼ5u {font-size: 14px;}
+.ͼ5u .cm-scroller {z-index: 10;}
+.ͼ5u .cm-lineNumbers .cm-gutterElement {padding-left: 13px;}
+.ͼ5 {color: #404740;}
+.ͼ6 {text-decoration: underline;}
+.ͼ7 {text-decoration: underline; font-weight: bold;}
+.ͼ8 {font-style: italic;}
+.ͼ9 {font-weight: bold;}
+.ͼa {text-decoration: line-through;}
+.ͼb {color: #708;}
+.ͼc {color: #219;}
+.ͼd {color: #164;}
+.ͼe {color: #a11;}
+.ͼf {color: #e40;}
+.ͼg {color: #00f;}
+.ͼh {color: #30a;}
+.ͼi {color: #085;}
+.ͼj {color: #167;}
+.ͼk {color: #256;}
+.ͼl {color: #00c;}
+.ͼm {color: #940;}
+.ͼn {color: #f00;}
+.ͼ4 .cm-line ::selection, .ͼ4 .cm-line::selection {background-color: transparent !important;}
+.ͼ4 .cm-line {caret-color: transparent !important;}
+.ͼ4 .cm-content :focus::selection, .ͼ4 .cm-content :focus ::selection {background-color: Highlight !important;}
+.ͼ4 .cm-content :focus {caret-color: initial !important;}
+.ͼ4 .cm-content {caret-color: transparent !important;}
+</style>
+		
+		<link rel="icon" type="image/png" sizes="512x512" href="./index_files/logo.svg">
+		<link rel="shortcut icon" href="./index_files/logo.svg">
+		<link rel="apple-touch-icon" sizes="512x512" href="https://chat.z.ai/Z.ai%20Chat%20-%20Free%20AI%20powered%20by%20GLM-4.6%20&amp;%20GLM-4.5">
+		<meta name="apple-mobile-web-app-title" content="Z.ai Chat - Free AI powered by GLM-4.6 &amp; GLM-4.5">
+		<meta name="description" content="Chat with Z.ai&#39;s free AI to build apps, create presentations, and write professionally. Fast, smart, and reliable, powered by GLM-4.6.">
+		<meta name="keywords" content="GLM-4.6, GLM 4.6, GLM-4.6-Air, GLM 4.6 Air, GLM 4.5, GLM4.5, GLM4.6, Deep Research, z ai, z.ai, GLM 4.5 AI, GLM 4.6 AI, GLM AI, Chat Z, zai, Chat AI, GLM, z.ia, Chat Z AI, AI chat, chatbot, z.ai chat, free ai chat, free AI, free ai chat no login, GLM-4.5, GLM-4.5 chat, GLM-4.1V, GLM-4.5V, AI assistant chat, AI PPT, AI presentation, AI presentation maker, AI slides maker, AI slides, slide deck, pitch deck, AI deck generator, free pitch deck generator, AI PPT, AI PPT maker, AI for Google Slides, AI for PowerPoint, AI writer, AI writing assistant, AI code generator, full stack code generation, AI full stack developer, claude code, Roo Code, Cline, Kilo Code, OpenCode, Codex, Cursor, GLM Coding Plan, GLM Coding, AI Coding, code writer ai, magic design, magic design tool, AI inspiration board, visual brainstorming AI, chat with AI, AI对话, AI聊天, 聊天机器人, 免费AI聊天, AI做PPT, AI写作, AI编程, 全栈开发, 灵感画板, AI tool, AI helper, AI for students, AI for marketers, AI for content creation, ChatGPT, chatgpt free, Free ChatGPT, gpt chat, Gemini, Grok, Claude, Poe AI, YouChat, Jasper AI, deepseek, qwen, 豆包, 文心一言, AI搜问答, 写作灵感AI, 代码解释工具, PPT思路生成, 如何用AI做PPT, create pitch deck from brief, AI business plan presentation, marketing report slides, AI academic paper assistant, AI legal contract drafting, write social media calendar, AI email responder,  VS Code AI assistant, AI for Notion, AI for Figma, AI math problem solver from image, AI geoguessr solver, image to code generator, table extractor from image, chart data extractor, document analysis AI, image caption generator, visual Q&amp;A, 看图猜成语, AI拍照解题, 数学题解答, 物理题解答, GeoGuess AI, 图片转表格, 图片读数据, 看图问答, analyze video, summarize video content, generate video transcript, find object in image, what is in this picture, 视频分析, 视频内容摘要, 生成视频字幕, 图片里有什么, 识别图中物体">
+		
+		<link rel="manifest" href="https://z-cdn.chatglm.cn/z-ai/frontend/static/manifest.json">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+		<meta name="theme-color" content="#F4F6F8">
+		<link rel="search" type="application/opensearchdescription+xml" title="Z.ai Chat - Free AI powered by GLM-4.6 &amp; GLM-4.5" href="https://z-cdn.chatglm.cn/z-ai/frontend/static/opensearch.xml">
+		<script async="" src="./index_files/js"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() { dataLayer.push(arguments); }
+			gtag('js', new Date());
+
+			gtag('config', 'G-Z8QTHYBHP3');
+		</script>
+
+
+		<script>
+					let metrics = {}
+					const observer = new PerformanceObserver((list) => {
+						const entries = list.getEntries();
+
+						entries.forEach((entry) => {
+							// 根据不同的entry类型处理不同的性能指标
+							switch (entry.entryType) {
+								case 'navigation':
+									{
+										const navEntry = entry;
+										metrics = {
+											...metrics,
+											dns: navEntry.domainLookupEnd - navEntry.domainLookupStart,
+											response: navEntry.responseEnd - navEntry.responseStart,
+											dom_parse: navEntry.domInteractive - navEntry.responseEnd,
+											dom_ready:
+												navEntry.domContentLoadedEventEnd - navEntry.fetchStart,
+											resource: navEntry.domComplete - navEntry.domContentLoadedEventEnd,
+											first_interactive: navEntry.domInteractive - navEntry.fetchStart,
+											first_byte: navEntry.responseStart - navEntry.domainLookupStart,
+											loaded: navEntry.loadEventEnd - navEntry.fetchStart
+										};
+										sessionStorage.setItem('performance', JSON.stringify(metrics));
+										// 发送性能指标到阿里云日志服务
+									}
+									break;
+
+								case 'paint':
+									if (entry.name === 'first-paint') {
+										metrics = {
+											...metrics,
+											first_paint: entry.startTime,
+										};
+										sessionStorage.setItem('performance', JSON.stringify(metrics));
+									}
+									if (entry.name === 'first-contentful-paint') {
+										metrics = {
+											...metrics,
+											first_contentful_paint: entry.startTime,
+										};
+										sessionStorage.setItem('performance', JSON.stringify(metrics));
+									}
+									break;
+							}
+						});
+					});
+
+					// 观察的性能指标类型
+					observer.observe({
+						entryTypes: ['navigation', 'paint']
+					});
+		</script>
+
+		<script>
+			function resizeIframe(obj) {
+				obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+			}
+		</script>
+
+		<script>
+			// On page load or when changing themes, best to add inline in `head` to avoid FOUC
+			const initTheme = () => {
+				const metaThemeColorTag = document.querySelector('meta[name="theme-color"]');
+				// 取用户浏览器设置的主题
+				const prefersTheme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+
+				if (!localStorage?.theme) {
+					localStorage.theme = prefersTheme;
+				}
+
+				if (localStorage.theme === 'system') {
+					document.documentElement.classList.add(prefersTheme);
+					metaThemeColorTag.setAttribute('content', prefersTheme === 'light' ? '#F4F6F8' : '#141618');
+				} else if (localStorage.theme === 'light') {
+					document.documentElement.classList.add('light');
+					metaThemeColorTag.setAttribute('content', '#F4F6F8');
+				} else {
+					document.documentElement.classList.add('dark');
+					metaThemeColorTag.setAttribute('content', '#141618');
+				}
+
+				window.matchMedia('(prefers-color-scheme: dark)').addListener((e) => {
+					if (localStorage.theme === 'system') {
+						if (e.matches) {
+							document.documentElement.classList.add('dark');
+							document.documentElement.classList.remove('light');
+							metaThemeColorTag.setAttribute('content', '#141618');
+						} else {
+							document.documentElement.classList.add('light');
+							document.documentElement.classList.remove('dark');
+							metaThemeColorTag.setAttribute('content', '#F4F6F8');
+						}
+					}
+				});
+
+				function setSplashImage() {
+					const logo = document.getElementById('logo');
+					const isDarkMode = document.documentElement.classList.contains('dark');
+					const splashContainer = document.getElementById('splash-screen');
+
+					if (isDarkMode) {
+						const darkImage = new Image();
+						darkImage.src = 'https://z-cdn.chatglm.cn/z-ai/static/logo.svg';
+						splashContainer.style.backgroundColor = '#141618';
+
+						darkImage.onload = () => {
+							logo.src = 'https://z-cdn.chatglm.cn/z-ai/static/logo.svg';
+							logo.style.filter = ''; // Ensure no inversion is applied if splash-dark.png exists
+						};
+
+						darkImage.onerror = () => {
+							logo.style.filter = 'invert(1)'; // Invert image if splash-dark.png is missing
+						};
+					} else {
+						splashContainer.style.backgroundColor = '#F4F6F8';
+					}
+				}
+
+				// Runs after classes are assigned
+				window.addEventListener('DOMContentLoaded', setSplashImage, { once: true });
+			};
+			initTheme();
+		</script>
+
+		<title>
+		Z.ai Chat - Free AI powered by GLM-4.6 &amp; GLM-4.5
+	</title>
+
+		<script>
+			// 炫酷的控制台介绍 - 根据语言显示
+			(function() {
+				// 检测用户语言偏好
+				const userLang = navigator.language || navigator.userLanguage;
+				const isChinese = userLang.startsWith('zh') || userLang.includes('CN') || userLang.includes('TW') || userLang.includes('HK');
+				
+				// 共同的 ASCII Logo
+				const logoLines = [
+					'%c███████╗     █████╗ ██╗',
+					'%c╚══███╔╝    ██╔══██╗██║',
+					'%c  ███╔╝     ███████║██║',
+					'%c ███╔╝      ██╔══██║██║',
+					'%c███████╗ ██╗██║  ██║██║',
+					'%c╚══════╝ ╚═╝╚═╝  ╚═╝╚═╝'
+				];
+				const logoColors = [
+					'color: #ff6b6b; font-family: monospace; font-size: 12px;',
+					'color: #4ecdc4; font-family: monospace; font-size: 12px;',
+					'color: #45b7d1; font-family: monospace; font-size: 12px;',
+					'color: #f9ca24; font-family: monospace; font-size: 12px;',
+					'color: #ff9ff3; font-family: monospace; font-size: 12px;',
+					'color: #6c5ce7; font-family: monospace; font-size: 12px;'
+				];
+
+				if (isChinese) {
+					// 中文版本
+					console.log('%c🚀 欢迎来到 Z.ai 🚀', 'color: #00d4ff; font-size: 20px; font-weight: bold; text-shadow: 0 0 10px #00d4ff;');
+					logoLines.forEach((line, index) => console.log(line, logoColors[index]));
+					console.log('');
+					console.log('%c✨ 基于开源GLM模型的智能AI助手', 'color: #a29bfe; font-size: 14px; font-weight: bold;');
+					console.log('%c🧠 支持文本生成、推理和深度研究', 'color: #fd79a8; font-size: 12px;');
+					console.log('%c🌍 为中英文用户量身定制', 'color: #00b894; font-size: 12px;');
+					console.log('%c💡 免费开源的ChatGPT替代方案', 'color: #fdcb6e; font-size: 12px;');
+					console.log('');
+					console.log('%c---', 'color: #ddd;');
+					console.log('%c由 ❤️ 和大量 ☕ 驱动', 'color: #e84393; font-size: 11px; font-style: italic;');
+					console.log('');
+					console.log('%c🚀 加入我们！我们正在招聘优秀人才！', 'color: #00b894; font-size: 13px; font-weight: bold;');
+					console.log('%c💼 查看职位: https://zhipu-ai.jobs.feishu.cn/s/stmyTm5lxaU', 'color: #0984e3; font-size: 12px; text-decoration: underline;');
+				} else {
+					// 英文版本
+					console.log('%c🚀 Welcome to Z.ai 🚀', 'color: #00d4ff; font-size: 20px; font-weight: bold; text-shadow: 0 0 10px #00d4ff;');
+					logoLines.forEach((line, index) => console.log(line, logoColors[index]));
+					console.log('');
+					console.log('%c✨ Advanced AI assistant powered by open-source GLM models', 'color: #a29bfe; font-size: 14px; font-weight: bold;');
+					console.log('%c🧠 Supports text generation, reasoning, and deep research', 'color: #fd79a8; font-size: 12px;');
+					console.log('%c🌍 Tailored for both English and Chinese users', 'color: #00b894; font-size: 12px;');
+					console.log('%c💡 Free and open-source ChatGPT alternative', 'color: #fdcb6e; font-size: 12px;');
+					console.log('');
+					console.log('%c---', 'color: #ddd;');
+					console.log('%cPowered by ❤️ and lots of ☕', 'color: #e84393; font-size: 11px; font-style: italic;');
+					console.log('');
+					console.log('%c🚀 Join us! We are hiring talented people!', 'color: #00b894; font-size: 13px; font-weight: bold;');
+					console.log('%c💼 View jobs: https://zhipu-ai.jobs.feishu.cn/s/stmyTm5lxaU', 'color: #0984e3; font-size: 12px; text-decoration: underline;');
+				}
+			})();
+		</script>
+
+		
+		<link rel="modulepreload" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/entry/start.DUFMxahP.js">
+		<link rel="modulepreload" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/8mFnqtFl.js">
+		<link rel="modulepreload" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/DEWELc8h.js">
+		<link rel="modulepreload" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/CaFAgJUl.js">
+		<link rel="modulepreload" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/entry/app.DoHBChrw.js">
+		<link rel="modulepreload" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/C1FmrZbK.js">
+		<link rel="modulepreload" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/D1hE67zV.js">
+	<link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/nodes/0.QaMgzTVH.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/D0QH3NT1.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/DWSbmxS6.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/Dpi5Gqq6.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/Q1FiMQew.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/B0stNAfX.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/CgU5AtxT.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/C8jmFYDp.js"><link rel="stylesheet" crossorigin="" href="./index_files/Toaster.uaUbY3tS.css"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/Cs0UqUFK.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/BujZ2vPx.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/fcKb1igf.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/DoouPrX2.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/BaQhTT1y.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/Dd4FmU9u.js"><link rel="stylesheet" crossorigin="" href="./index_files/0.RtiOCq63.css"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/nodes/1.DSqfeZwn.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/nodes/17.DZyyMuFa.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/CEYvdTQY.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/DMXLx9K2.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/DYEkLRdc.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/Tc-PaOPZ.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/1BUnk4NB.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/CiQW3kR9.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/BLbI3Qb3.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/BhZReE1o.js"><link rel="stylesheet" crossorigin="" href="./index_files/17.x6IVi3VN.css"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/nodes/2.ByOvCBOr.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/DR3t0NKP.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/aKIf0kCO.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/Dj58T-9j.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/OU_aCd8v.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/CiMb4NEs.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/Df2EYT-E.js"><link rel="stylesheet" crossorigin="" href="./index_files/ConfirmDialog.kaSBQ3kP.css"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/BurRtnfb.js"><link rel="stylesheet" crossorigin="" href="./index_files/Switch.CyLKLEmt.css"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/DJCJPu5l.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/43Jw0pzu.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/Dtdr4cep.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/Bf7pd17u.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/CtrQEDG2.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/Dl8I7rwg.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/BtVdzLC6.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/DOzCBFTM.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/Crdtaey5.js"><link rel="stylesheet" crossorigin="" href="./index_files/ComboBox.Bc0Xa_vw.css"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/Bk02Boxz.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/DLtBGy8i.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/IAUK2hpb.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/FvG03dOZ.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/BaChHaCk.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/Oi5nbAYk.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/CL32g-ZG.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/BvsQIhHF.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/BRgHOgAm.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/MyClpCm8.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/B-hmjn1e.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/Dx0NPeKv.js"><link rel="stylesheet" crossorigin="" href="./index_files/2.BhAyWm1G.css"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/nodes/5.BKnvDmFc.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/BSO6dvBE.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/OLBZFofq.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/BKfqeLbB.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/DOoh_wMm.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/BFwTDfmh.js"><link rel="stylesheet" crossorigin="" href="./index_files/DeployProjectButton.z_X1yUjy.css"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/CDb-E_0N.js"><link rel="stylesheet" crossorigin="" href="./index_files/WorkSpace.C4Seyq5N.css"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/BYORYrsm.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/B7gTditp.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/BKjkHpIm.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/CU7jkH8G.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/CuicpCum.js"><link rel="stylesheet" crossorigin="" href="./index_files/Chat.4MqQw6Xk.css"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/CN33CUiC.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/C3neO7q-.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/MpR718zG.js"><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/chunks/avj6f8Nu.js"></head>
+
+	<body data-sveltekit-preload-data="hover" style=""><script src="./index_files/browser-sdk.js.download" crossorigin=""></script>
+				<script>
+			const env = location.hostname === 'chat.z.ai' ? 'prod' : 'pre';
+    !(function(c,b,d,a){c[a]||(c[a]={});c[a]=
+    {
+      pid: 'j2c03hoppk@9a8be198b65ba4b',
+			endpoint: 'https://j2c03hoppk-default-cn.rum.aliyuncs.com',
+      // 设置环境信息，参考值：'prod' | 'gray' | 'pre' | 'daily' | 'local'
+      env: env,
+      // 设置路由模式， 参考值：'history' | 'hash'
+      spaMode: 'history',
+      collectors: {
+        // 页面性能指标监听开关，默认开启
+        perf: true,
+        // WebVitals指标监听开关，默认开启
+        webVitals: true,
+        // Ajax监听开关，默认开启
+        api: true,
+        // 静态资源开关，默认开启
+        staticResource: true,
+        // JS错误监听开关，默认开启
+        jsError: true,
+        // 控制台错误监听开关，默认开启
+        consoleError: false,
+        // 用户行为监听开关，默认开启
+        action: true,
+      },
+      // 链路追踪配置开关，默认关闭
+      tracing: false,
+			parseViewName(url) {
+				const pathname = new URL(url).pathname;
+				if (!pathname) {
+					return '/';
+				}
+				return pathname.replace(/(.*)\/[a-f0-9-]+$/g, '$1');
+			},
+			evaluateApi(options, response) {
+
+				const traceId = response?.headers?.get?.('X-Trace-Id') || 'unknown';
+
+				return {
+					name: options.url.replace(/\/[a-f0-9-]{36}/g, '/**'),
+					properties: {
+						traceId
+					}
+				}
+			}
+    }
+    with(b)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("crossorigin","",src=d)
+})(window, document, "https://sdk.rum.aliyuncs.com/v2/browser-sdk.js", "__rum");
+		</script>
+		<div style="display: contents">
+			<script>
+				{
+					__sveltekit_hqz5xz = {
+						base: "",
+						assets: "https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/entry/start.DUFMxahP.js"),
+						import("https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.0.95/_app/immutable/entry/app.DoHBChrw.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+				}
+			</script>
+		      <div class="relative app"><div class="text-gray-700 dark:text-white/80 bg-[#F4F6F8] dark:bg-[#141618] h-screen max-h-[100dvh] overflow-auto flex flex-row justify-end">   <div class=" fixed md:hidden z-40 top-0 right-0 left-0 bottom-0 bg-black/60 w-full min-h-screen h-screen flex justify-center overflow-hidden overscroll-contain"></div> <div id="sidebar" class="h-screen max-h-[100dvh] min-h-screen select-none md:relative w-[260px] max-w-[260px] transition-width duration-200 ease-in-out shrink-0 bg-white text-gray-900 dark:bg-[#0C0E10] dark:text-gray-200 text-sm border-r-1 border-black/5 fixed z-50 top-0 left-0 overflow-x-hidden svelte-141e0sl" data-state="true"><div class="my-auto flex flex-col gap-2 justify-between h-screen max-h-[100dvh] w-[260px] overflow-x-hidden z-50 "><div class="flex justify-between p-5 text-gray-600 dark:text-gray-400"><div class="flex gap-3 items-center cursor-pointer"><div class="self-center w-[32px] h-[32px] bg-[url(https://z-cdn.chatglm.cn/z-ai/static/logo.svg)] bg-contain bg-no-repeat"></div></div> <button class="cursor-pointer p-[7px] flex rounded-xl hover-bg-color transition"><div class="self-center m-auto"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class=" size-6 text-black dark:text-white rotate-180"><g opacity="0.8"><path d="M3 17.0048V6.99666C3 4.78752 4.7865 3 6.99563 3H17.0037C19.2129 3 21 4.78757 21 6.99671V17.0048C21 19.214 19.2129 21 17.0037 21H6.99563C4.7865 21 3 19.2139 3 17.0048Z" stroke-linejoin="round"></path><path d="M15 3V21" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8 10L10 12L8 14" stroke-linecap="round" stroke-linejoin="round"></path></g></svg></div></button></div> <button id="sidebar-new-chat-button" class="siderNewChatButton flex justify-center items-center gap-2 rounded-lg sider-item py-2.5 button-border text-sm transition no-drag-region bg-[#F4F6F8] dark:bg-[#26282A] hover:bg-[#E6E8EA] dark:hover:bg-[#36383A]" draggable="false"><div><svg class=" size-5" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="currentColor"><g opacity="0.8"><path d="M21 13V17C21 19.2091 19.2091 21 17 21H7C4.79086 21 3 19.2132 3 17.0041C3 14.0012 3 9.96446 3 6.99654C3 4.7874 4.79083 3 6.99997 3C9.00004 3 11 3 11 3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.58494 12.0343C8.21038 12.4093 8 12.9177 8 13.4477V16H10.5686C11.0992 16 11.608 15.7892 11.9831 15.4139L19.5867 7.80695C20.3674 7.02597 20.3674 5.76012 19.5867 4.97914L19.0235 4.41568C18.2422 3.63401 16.9749 3.63425 16.1939 4.41622L8.58494 12.0343Z" stroke="currentColor" stroke-linejoin="round"></path></g></svg></div> <div class="self-center text-sm font-medium text-gray-850 dark:text-white font-primary">New Chat</div></button>  <div class="relative  mx-4"> <div class="flex justify-center items-center gap-2 relative z-10" id="search-container"><div class="flex w-full rounded-xl" id="chat-search"><div class="pl-3 self-center rounded-l-xl bg-transparent"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4"><path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z" clip-rule="evenodd"></path></svg></div> <input class="w-full rounded-r-xl py-1.5 pl-2.5 text-sm bg-transparent dark:text-gray-300 outline-hidden" placeholder="Search"> </div> </div></div> <div class="relative flex flex-col flex-1 px-4 overflow-y-auto overflow-x-hidden "><div class="relative  mt-0.5"> <div id="" class="w-full "><div class="w-full cursor-pointer"><div><div class="flex items-start justify-between"><div class="w-full group rounded-md relative flex items-center justify-between hover:bg-gray-100 dark:hover:bg-gray-900 text-gray-500 dark:text-gray-500 transition"><button class="w-full py-2 pl-3 flex items-center gap-1.5 text-xs font-medium"><div class="text-gray-300 dark:text-gray-600"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class=" size-3 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path></svg></div> <div class="translate-y-[0.5px] dark:text-white" style="color: rgb(85, 85, 85); font-size: 0.75rem;">All Chats</div></button> </div> </div> </div></div> <div><div slot="content" class="w-full">   <div class="flex overflow-y-auto flex-col flex-1 scrollbar-hidden svelte-141e0sl"><div class="pt-1.5"><div class="w-full pl-3 text-xs text-gray-500  pb-1.5">Today</div>     <div class="w-full mb-1 relative group" draggable="false"><button type="button" class=" w-full flex justify-between rounded-lg px-3 py-2 bg-[#F2F4F6] dark:bg-[#37383B]  whitespace-nowrap text-ellipsis" draggable="false"> <div class="flex self-center flex-1 w-full"><div dir="auto" class="text-left self-center overflow-hidden w-full h-[20px]">🌐 SMK SHIFA' KALIPARE SEO</div></div></button> <div class="chatItemMenu bg-[#F2F4F6] dark:bg-[#37383B] absolute right-2 h-full top-0 pr-1 pl-3 flex items-center bg-linear-to-l from-80% to-transparent"><div class="flex self-center z-10"><button aria-controls="B1qXuWGeW2" aria-expanded="false" data-state="closed" id="silUKxtYeX" tabindex="0" data-melt-dropdown-menu-trigger="" data-menu-trigger="" type="button" class="flex"><div aria-label="More" class="flex"><button aria-label="Chat Menu" class="self-center dark:hover:text-white transition"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4"><path d="M2 8a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM6.5 8a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM12.5 6.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z"></path></svg></button></div></button> <div slot="content"></div> <button id="delete-chat-button" class="hidden"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4"><path d="M2 8a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM6.5 8a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM12.5 6.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z"></path></svg></button></div></div></div> </div></div></div></div></div></div></div></div></div>  <audio id="audioElement" style="display: none;"></audio>  <div class="h-screen max-h-[100dvh] transition-width duration-200 ease-in-out   md:max-w-[calc(100%-260px)] w-full max-w-full flex flex-col" id="chat-container"> <div id="KACsXL9bx9" data-pane-group="" data-direction="horizontal" data-pane-group-id="KACsXL9bx9" class="w-full h-full" style="display: flex; flex-direction: row; height: 100%; overflow: hidden; width: 100%;"><div data-pane="" data-pane-id="eV1GaoUOE0" data-pane-group-id="KACsXL9bx9" class="flex relative w-full h-full" style="flex: 33 1 0px; overflow: hidden;"> <div class="flex flex-col flex-auto z-10 w-full @container">   <nav class="sticky top-0 z-30 w-full px-5 py-3.5 -mb-8 flex items-center drag-region" style="app-region: drag;"><div class="bg-linear-to-b via-50% from-[#F4F6F8] via-[#F4F6F8] to-transparent dark:from-[#141618] dark:via-[#141618] dark:to-transparent pointer-events-none absolute inset-0 -bottom-7 z-[-1]"></div> <div class="flex px-1 pt-0.5 mx-auto w-full max-w-full bg-transparent"><div class="flex gap-2 justify-between items-center w-full max-w-full"><div class="flex gap-1">  <div aria-label="New Chat" class="flex"><button id="new-chat-button" class="navNewChat flex md:hidden cursor-pointer rounded-xl p-1 text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-850 transition" aria-label="New Chat"><div class="self-center m-auto"><svg class=" text-black dark:text-white size-6" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="currentColor"><g opacity="0.8"><path d="M21 13V17C21 19.2091 19.2091 21 17 21H7C4.79086 21 3 19.2132 3 17.0041C3 14.0012 3 9.96446 3 6.99654C3 4.7874 4.79083 3 6.99997 3C9.00004 3 11 3 11 3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.58494 12.0343C8.21038 12.4093 8 12.9177 8 13.4477V16H10.5686C11.0992 16 11.608 15.7892 11.9831 15.4139L19.5867 7.80695C20.3674 7.02597 20.3674 5.76012 19.5867 4.97914L19.0235 4.41568C18.2422 3.63401 16.9749 3.63425 16.1939 4.41622L8.58494 12.0343Z" stroke="currentColor" stroke-linejoin="round"></path></g></svg></div></button></div></div> <div class="flex-1 overflow-hidden max-w-full py-0.5 ml-1"><div class="flex flex-col items-start w-full"><div class="flex justify-between items-center w-full"><div class="flex overflow-hidden"><div class="flex flex-col mr-1"><button aria-controls="bcZL1NTjex" aria-expanded="false" data-state="closed" id="model-selector-GLM-4-6-API-V1-button" tabindex="0" data-melt-dropdown-menu-trigger="" data-menu-trigger="" type="button" class="modelSelectorButton relative font-primary cursor-default" aria-label="Select a model" disabled=""><div class="flex text-left px-0.5 outline-hidden bg-transparent truncate  text-black dark:text-white text-lg justify-between font-medium placeholder-gray-400 focus:outline-hidden">GLM-4.6 </div></button> </div>  <button role="button" aria-haspopup="dialog" aria-expanded="true" data-state="open" id="JpRItYxYLF" data-melt-popover-trigger="" data-popover-trigger="" type="button" class="modelRecommendAnchor"><button hidden="" class="relative"></button></button> </div> </div></div></div> <div class="flex flex-none gap-2 items-center self-start text-black dark:text-white"><button class="flex gap-2 items-center px-2 py-1 rounded-lg transition hover:bg-gray-100 dark:hover:bg-gray-850 disabled:cursor-not-allowed disabled:opacity-50"><svg class="size-4" stroke="currentColor" stroke-width="1.5" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="åˆ†äº«2_share-two 1" opacity="0.8"><path id="Vector" d="M8.66667 2.40397C8.66667 1.79298 9.42013 1.50385 9.82886 1.958L13.843 6.41819C14.3081 6.93497 14.2981 7.7224 13.8199 8.22713L9.8173 12.4521C9.40282 12.8896 8.66667 12.5963 8.66667 11.9936V9.33333C4 9.33333 2 14.3333 2 14.3333C2 8.66667 3.66667 5 8.66667 5V2.40397Z" stroke-linecap="round" stroke-linejoin="round"></path></g></svg> <span class="font-medium">Share Session</span></button>  <button aria-controls="0X7aFRAIUS" aria-expanded="false" data-state="closed" id="j6OgAHKLUU" tabindex="0" data-melt-dropdown-menu-trigger="" data-menu-trigger="" type="button"><button class="flex w-full rounded-xl transition select-none hover:bg-gray-50 dark:hover:bg-gray-850" aria-label="User Menu"><div class="self-center"><img src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAIAAABt+uBvAAAAA3NCSVQICAjb4U/gAAAABmJLR0QAXABrAMDbRn/EAAADwElEQVR4nO2cy08TURSH70znFiq0BcRSi1SgYCEFg1HRKGyEkKAhKhsNYeECFsZE/xBdqBsjuNOYsDFhRTCBYJAFJkh4aDTEgpTyUEBtK69OqQtRZsqUgwlzZyaeL93cO5PcX77M3MeZpFzzrT6CJIfXOoDeQUEAKAgABQGgIAAUBICCAFAQAAoCQEEAKAgABQGgIAAUBICCAFAQAAoCQEEAKAgABQGgIAAUBICCAFAQAAoCQEEAKAgABQGgIACBzTCP756n1ATfF49Hxbgobq6tx5a/rc99WekfnJ/wh9QPmBRGggSBpwK3hxs5SgkhJpuVOrJTS4rt1WecgdlId19w4M2C2iEV0fsrJghcgdva0uS9eaNUmwCajLq5qdzPcYRTes4EgTt3ykEF/uGTd6oGUxia8Xi/edA+/nZsSfFSgdta4LZ68q1ejz3nkEV66XRF9rXLhR2dfiYZt9BG0C5MTocnp8O9rwkhpKnRU1vtonR7Hqg+6+zqCYQiUWZ5dD0HPX/xqbsvKO2xW2l9TR7LDLoWRAjp6PTPzq9Ie4oKbCwD6F0QIWRiUrYPys5KZTm6AQRNByPSZoqZaWYDCAqFZVOy2byHHfn+YQBB1nQqbYpikk2UOhhAUK7zgLQZ+clujSeGEJSwbAXli5ra6F3Qpdo8d27636YoxvsG5lgG0N1OWkrjxfz6miPS09nw+NLwuPIZRSV0JyjPlVZ6LCM/z1qUb3M6LFI7/s/h/+WwervFp9jP85ziaT4eJ6Pvl+89GlM3lhLaCDKZ9lI822Lh62pP/2xX74x6eXZB75M0ISQrI+Xk8eyykkxNRtdGUDye9LcTSnlvkf1Oq6+hzs08qUav2P22pAUzWzot9tjLSzJ93kynY7tglppiulp/9PuPjf7BeVYxCdHhKhaKRIdGFodGFgkhrc3eqkon/+cpp5RvqHMzFqTrOaj92ceh0UVpz+Ecy4UqF8sMuhZECGl7+iEsL7BW+LJYBtC7oLX12FRAVg86iAWzBBJKrmkWpvOmAQQl1DcEihVFOWJMtjv6hz34fmAAQdqCggAMICgWkxWheZ7pS2YAQSurorRJcZJO4PNM4nex8lJ2J3sDCJoKRFbXYtKeyhMOZqMbQBDZsVesKMtyyb8FqYcxBL18FdyIbk/VGTbz9SuFbIbm8C+6dscYT5CGoCAAFASAggBQEAAKAkBBACgIAAUBoCAAFASAggBQEAAKAkBBACgIAAUBoCAAFASAggBQEAAKAkBBACgIAAUBoCAAFASAggB+AQpt4QJ2FU8xAAAAAElFTkSuQmCC" class="object-cover rounded-full size-7.5" alt="User profile" draggable="false"></div></button></button> </div></div></div></nav> <div class="flex overflow-auto z-10 flex-col flex-auto justify-between pb-2.5 w-full max-w-full h-0 scrollbar-hidden" id="messages-container"><div class="flex flex-col w-full h-full"><div class="h-full flex pt-8"><div class="pt-2 w-full"><div class="w-full"> <div class="flex flex-col justify-between px-5 mb-3 w-full max-w-[1000px] mx-auto rounded-lg group"> <div class="flex w-full user-message" id="message-b2535236-d913-4d52-96e6-abfac566b25b"> <div class="flex-auto w-0 max-w-full"> <div class="chat-user w-full min-w-full markdown-prose"> <div class="relative w-full"> <div class="flex justify-end pb-1"><div class="rounded-xl max-w-[90%] px-3 py-2.25  bg-white dark:bg-[#26282A] "> &lt;!DOCTYPE html&gt;
+&lt;html lang="id"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Kelas 10 TKJ 2 - SMK SHIFA' KALIPARE&lt;/title&gt;
+    &lt;style&gt;
+        /* CSS untuk styling modern dan responsif */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ffd700;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            text-align: center;
+            padding: 150px 2rem 100px;
+            margin-top: 80px; /* Offset untuk fixed header */
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            background: #ffd700;
+            color: #333;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background: #ffed4e;
+        }
+
+        /* Section Umum */
+        section {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #4facfe;
+        }
+
+        /* Informasi Section */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .info-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .info-card h3 {
+            color: #00f2fe;
+            margin-bottom: 1rem;
+        }
+
+        /* Prestasi Section */
+        .prestasi-list {
+            list-style: none;
+        }
+
+        .prestasi-item {
+            background: white;
+            margin-bottom: 1rem;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+        }
+
+        .prestasi-item::before {
+            content: "🏆";
+            font-size: 2rem;
+            margin-right: 1rem;
+        }
+
+        /* Struktur Section */
+        .struktur-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .anggota {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .anggota:hover {
+            transform: translateY(-5px);
+        }
+
+        .anggota img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            object-fit: cover;
+        }
+
+        .anggota h3 {
+            color: #4facfe;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Kontak Section */
+        .kontak {
+            background: white;
+            max-width: 800px;
+            margin: 4rem auto;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input, textarea {
+            margin-bottom: 1rem;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .kontak-info {
+            margin-top: 2rem;
+            text-align: center;
+            color: #666;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+
+        /* Responsif */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none; /* Sembunyikan nav di mobile, bisa tambah hamburger nanti */
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .info-grid, .struktur-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Animasi */
+        .info-card, .prestasi-item, .anggota {
+            opacity: 0;
+            animation: fadeIn 0.5s forwards;
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;nav&gt;
+            &lt;div class="logo"&gt;Kelas 10 TKJ 2&lt;/div&gt;
+            &lt;ul class="nav-links"&gt;
+                &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#informasi"&gt;Informasi&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#prestasi"&gt;Prestasi&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#struktur"&gt;Struktur&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#kontak"&gt;Kontak&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;section id="home" class="hero"&gt;
+        &lt;h1&gt;Selamat Datang di Kelas 10 TKJ 2!&lt;/h1&gt;
+        &lt;p&gt;Kelas Teknik Komputer dan Jaringan yang inovatif dan penuh prestasi. Mari berkontribusi dalam dunia teknologi.&lt;/p&gt;
+        &lt;a href="#informasi" class="btn"&gt;Lihat Informasi&lt;/a&gt;
+    &lt;/section&gt;
+
+    &lt;section id="informasi" class="info-grid"&gt;
+        &lt;h2&gt;Informasi Kelas&lt;/h2&gt;
+        &lt;div class="info-card"&gt;
+            &lt;h3&gt;Deskripsi Kelas&lt;/h3&gt;
+            &lt;p&gt;Kelas 10 TKJ 2 adalah kelas Teknik Komputer dan Jaringan di SMK SHIFA' KALIPARE dengan 35 siswa. Fokus pada pemrograman, jaringan komputer, dan keamanan siber.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class="info-card"&gt;
+            &lt;h3&gt;Jadwal Belajar&lt;/h3&gt;
+            &lt;p&gt;Senin-Jumat: 07:30 - 14:00. Praktikum Lab: Selasa &amp; Kamis pukul 15:00. Libur mengikuti kalender sekolah.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class="info-card"&gt;
+            &lt;h3&gt;Aturan Kelas&lt;/h3&gt;
+            &lt;p&gt;Hadir tepat waktu, gunakan fasilitas dengan hati-hati, dan kolaborasi dalam proyek kelompok. Pelanggaran dibahas di rapat kelas.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section id="prestasi"&gt;
+        &lt;h2&gt;Prestasi Kelas&lt;/h2&gt;
+        &lt;ul class="prestasi-list"&gt;
+            &lt;li class="prestasi-item"&gt;Juara 1 Lomba Jaringan Komputer Tingkat Kabupaten (2023)&lt;/li&gt;
+            &lt;li class="prestasi-item"&gt;Prestasi Pemrograman Terbaik TKJ (2022)&lt;/li&gt;
+
+            &lt;li class="prestasi-item"&gt;Kontribusi Teknologi: Aplikasi Pendidikan Lokal (2023)&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/section&gt;
+
+    &lt;section id="struktur"&gt;
+        &lt;h2&gt;Struktur Kelas&lt;/h2&gt;
+        &lt;div class="struktur-grid"&gt;
+            &lt;div class="anggota"&gt;
+                &lt;img src="https://via.placeholder.com/100?text=Ketua" alt="Ketua Kelas"&gt;
+                &lt;h3&gt;Kurniawan &lt;/h3&gt;
+                &lt;p&gt;Ketua Kelas&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="anggota"&gt;
+                &lt;img src="https://via.placeholder.com/100?text=Wakil" alt="Wakil Ketua"&gt;
+                &lt;h3&gt; Muhammad ardan &lt;/h3&gt;
+                &lt;p&gt;Wakil Ketua&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="anggota"&gt;
+                &lt;img src="https://via.placeholder.com/100?text=Sekretaris" alt="Sekretaris"&gt;
+                &lt;h3&gt; Anesa &lt;/h3&gt;
+                &lt;p&gt;Sekretaris&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="anggota"&gt;
+                &lt;img src="https://via.placeholder.com/100?text=Bendahara" alt="Bendahara"&gt;
+                &lt;h3&gt; elvareta &lt;/h3&gt;
+                &lt;p&gt;Bendahara&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section id="kontak" class="kontak"&gt;
+        &lt;h2&gt;Hubungi Kami&lt;/h2&gt;
+        &lt;form id="kontakForm"&gt;
+            &lt;input type="text" placeholder="Nama Anda" required&gt;
+            &lt;input type="email" placeholder="Email" required&gt;
+            &lt;textarea placeholder="Pesan Anda" rows="5" required&gt;&lt;/textarea&gt;
+            &lt;button type="submit" class="btn"&gt;Kirim Pesan&lt;/button&gt;
+        &lt;/form&gt;
+        &lt;div class="kontak-info"&gt;
+            &lt;p&gt;Email: kelas10tkj2@smknegeri1.sch.id | Telepon: 085-731-740-649&lt;/p&gt;
+            &lt;p&gt;Alamat: kalipare  XYZ&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;footer&gt;
+        &lt;p&gt;&amp;copy; 2023 Kelas 10 TKJ 2 - SMK SHIFA' KALIPARE. Semua hak dilindungi.&lt;/p&gt;
+    &lt;/footer&gt;
+
+    &lt;script&gt;
+        // JavaScript untuk interaktivitas
+        // Handle form submit
+        document.getElementById('kontakForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Pesan berhasil dikirim! Kami akan balas segera.');
+            this.reset();
+        });
+
+        // Smooth scroll untuk nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor =&gt; {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Animasi fade-in
+        window.addEventListener('load', () =&gt; {
+            const elements = document.querySelectorAll('.info-card, .prestasi-item, .anggota');
+            elements.forEach((el, index) =&gt; {
+                el.style.animationDelay = `${index * 0.2}s`;
+            });
+        });
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+ jadikan web ini web yang bisa di cari smua orng</div></div> <div class="flex justify-end text-gray-600 dark:text-gray-500"> <div aria-label="Edit" class="flex"><button class="invisible p-1.5 rounded-lg transition group-hover:visible hover:bg-black/5 dark:hover:bg-white/5 dark:hover:text-white hover:text-black edit-user-message-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.3" stroke="currentColor" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125"></path></svg></button></div> <div aria-label="Copy" class="flex"><button class="invisible p-1.5 rounded-lg transition group-hover:visible hover:bg-black/5 dark:hover:bg-white/5 dark:hover:text-white hover:text-black"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18" stroke-width="1.5" stroke="currentColor" class="size-4 dark:hover:text-white hover:text-black"><g id="å¤åˆ¶_copy (6) 1"><path id="Vector" d="M4.875 4.66161V2.92944C4.875 2.34696 5.3472 1.87476 5.92969 1.87476H15.0703C15.6528 1.87476 16.125 2.34696 16.125 2.92944V12.0701C16.125 12.6526 15.6528 13.1248 15.0703 13.1248H13.3186" stroke-linecap="round" stroke-linejoin="round"></path><path id="Vector_2" d="M12.0703 4.87476H2.92969C2.3472 4.87476 1.875 5.34696 1.875 5.92944V15.0701C1.875 15.6526 2.3472 16.1248 2.92969 16.1248H12.0703C12.6528 16.1248 13.125 15.6526 13.125 15.0701V5.92944C13.125 5.34696 12.6528 4.87476 12.0703 4.87476Z" stroke-linejoin="round"></path></g></svg></button></div>  </div></div></div></div></div></div><div class="flex flex-col justify-between px-5 mb-3 w-full max-w-[1000px] mx-auto rounded-lg group"> <div class="flex w-full message-14f9f776-6503-4e6b-8e42-eaae948320cd svelte-1u5gq5j" id="message-14f9f776-6503-4e6b-8e42-eaae948320cd"><div class="flex-auto pl-1 w-0"><div class="flex gap-2 items-center"><img crossorigin="anonymous" src="./index_files/logo.svg" class="size-6 object-contain" alt="profile" draggable="false"> <div class="self-center font-semibold line-clamp-1 flex gap-1 items-center"><div aria-label="GLM-4.6" class="flex"><span class="text-black line-clamp-1 dark:text-white">GLM-4.6</span></div> <div class="self-center text-xs invisible group-hover:visible text-gray-400 font-medium first-letter:capitalize ml-0.5 translate-y-[1px]"><div aria-label="Wednesday, October 8, 2025 6:25 PM" class="flex"><span class="line-clamp-1">Today at 6:25 PM</span></div></div></div></div> <div> <div class="chat-assistant w-full min-w-full markdown-prose svelte-1u5gq5j"><div> <div class="flex relative flex-col w-full" id="response-content-container"><div><div id="" class="flex flex-col px-4 py-3 bg-white/60 dark:bg-black/10 border-1 border-black/10 dark:border-white/10 rounded-xl my-3 w-full"><div class="transition flex flex-1 justify-between items-center gap-2 cursor-pointer "><div class="flex overflow-hidden flex-1 gap-2 text-xs"><div class="flex justify-center items-center size-4 shrink-0"><div class="rounded-full size-1 bg-black/60 dark:bg-white/60"></div></div>  <div class="max-w-full text-xs truncate text-black/30 dark:text-white/30">The user wants me to modify the existing HTML to make it more discoverable by search engines (SEO-friendly). I'll need to:</div></div> <div class="flex gap-2 items-center self-end px-2"><div class="flex gap-1 text-xs font-medium whitespace-nowrap item-center text-black/50 dark:text-white/50"></div> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="size-3"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path></svg></div></div> <div class="overflow-hidden relative"><div class="headShadow absolute top-0 left-0 right-0 h-8 bg-gradient-to-b from-[#FBFCFDAC] dark:from-[#111415BC] to-transparent pointer-events-none z-1 transition-opacity duration-200 opacity-100"></div> <div class="detailsSubContainer relative transition-all h-0 overflow-hidden max-h-40"><div class="mb-1.5" slot="content"><blockquote dir="auto" class="text-xs leading-5 text-black/50 dark:text-white/50"><p dir="auto" class="svelte-121hp7c">The user wants me to modify the existing HTML to make it more discoverable by search engines (SEO-friendly). I'll need to: </p><div class="my-2 "></div><ol start="1" dir="auto"><li class="text-start"> Add proper meta tags for SEO (description, keywords, author, etc.)</li><li class="text-start"> Improve the title tag to be more descriptive</li><li class="text-start"> Add structured data (JSON-LD) for better search engine understanding</li><li class="text-start"> Ensure proper heading hierarchy (h1, h2, h3)</li><li class="text-start"> Add alt attributes to all images</li><li class="text-start"> Add Open Graph meta tags for social media sharing</li><li class="text-start"> Add Twitter Card meta tags</li><li class="text-start"> Include a sitemap reference</li><li class="text-start"> Add canonical URL</li><li class="text-start"> Ensure semantic HTML5 elements are used properly</li><li class="text-start"> Add language and region meta tags</li><li class="text-start"> Add a robots meta tag</li><li class="text-start"> Include a favicon reference</li><li class="text-start"> Add more descriptive content where needed</li> </ol><div class="my-2 "></div><p dir="auto" class="svelte-121hp7c">Let me implement these changes to make the website more discoverable by search engines. </p> </blockquote> </div></div> <div class="tailShadow absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[#FBFCFDAC] dark:from-[#111415BC] to-transparent pointer-events-none z-1 transition-opacity duration-200 opacity-100"></div></div></div><p dir="auto" class="svelte-121hp7c">Saya akan membantu Anda mengoptimalkan website ini agar lebih mudah ditemukan oleh mesin pencari (SEO-friendly). Berikut adalah versi yang telah diperbaiki dengan berbagai elemen SEO: </p><div class="my-2 "></div><div role="button" tabindex="0" class="autoShowArtifacts inline-flex flex-col min-w-[240px] rounded-xl gap-2 border border-black/10 hover:border-black/40 dark:hover:border-white/40 dark:border-white/20 dark:bg-[#16181A] px-3 py-2 max-w-full cursor-pointer transition select-none mb-3"><div class="flex flex-1 max-w-full items-center gap-25"><div class="flex flex-1 items-center gap-2"><div class="flex shrink-0 items-center justify-center"><svg class="size-4" stroke-width="1.333" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M13.113 2.266a.936.936 0 0 1 .797 1.057l-2.476 17.614a.936.936 0 0 1-1.854-.26l2.476-17.615a.936.936 0 0 1 1.057-.796M6.811 6.744a.936.936 0 0 1 0 1.324l-3.55 3.55 3.55 3.551a.936.936 0 1 1-1.324 1.324l-4.213-4.212a.936.936 0 0 1 0-1.325l4.213-4.212a.936.936 0 0 1 1.324 0m15.447 4.213c.357.356.365.93.025 1.297a6.05 6.05 0 0 0-2.377-1.001l-3.185-3.185a.936.936 0 1 1 1.324-1.324zm-3.47 10.491a.48.48 0 0 0 .48-.425c.225-1.341.423-2.03.849-2.457.425-.426 1.11-.624 2.445-.849a.485.485 0 0 0 .438-.48.48.48 0 0 0-.44-.48c-1.332-.227-2.018-.425-2.443-.851-.426-.427-.624-1.115-.849-2.455a.48.48 0 0 0-.48-.428.49.49 0 0 0-.481.426c-.226 1.341-.423 2.03-.85 2.457-.424.426-1.108.624-2.44.85a.48.48 0 0 0-.442.481c0 .26.199.448.439.48 1.335.225 2.02.418 2.444.842.426.425.623 1.114.849 2.466.04.24.23.423.482.423" clip-rule="evenodd"></path></svg></div> <div class="flex flex-col shrink truncate"><span class="font-semibold text-sm">HTML</span> </div></div> <div class="shrink-0"></div></div> <div class="bg-black/10 dark:bg-gray-700 shrink-0 h-[1px] w-full" role="separator" aria-orientation="horizontal"></div> <div class="flex items-center gap-2 px-1 text-black/50 text-xs dark:text-white/30"><svg class="size-3 text-black/30 dark:text-white/30" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 24 24"><path fill="currentColor" d="M12 1.25c5.937 0 10.75 4.813 10.75 10.75S17.937 22.75 12 22.75 1.25 17.937 1.25 12 6.063 1.25 12 1.25m0 2a8.75 8.75 0 1 0 0 17.5 8.75 8.75 0 0 0 0-17.5m0 3.25a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11"></path></svg> <span>Generate index.html</span></div></div> <div class="my-2 "></div><h2 dir="auto" class="svelte-121hp7c">Perubahan SEO yang telah saya tambahkan: </h2><ol start="1" dir="auto"><li class="text-start"> <p class="svelte-121hp7c"><strong>Meta Tags SEO</strong>: </p><ul dir="auto"><li class="text-start"> Deskripsi halaman yang informatif</li><li class="text-start"> Kata kunci relevan</li><li class="text-start"> Tag robots untuk mengizinkan indexing</li><li class="text-start"> Informasi geografis (lokasi sekolah)</li> </ul></li><li class="text-start"> <p class="svelte-121hp7c"><strong>Open Graph &amp; Twitter Card</strong>: </p><ul dir="auto"><li class="text-start"> Meta tags untuk tampilan optimal saat dibagikan di media sosial</li><li class="text-start"> Gambar dan deskripsi yang menarik</li> </ul></li><li class="text-start"> <p class="svelte-121hp7c"><strong>Structured Data (JSON-LD)</strong>: </p><ul dir="auto"><li class="text-start"> Schema.org untuk EducationalOrganization</li><li class="text-start"> Informasi kontak, alamat, dan media sosial</li> </ul></li><li class="text-start"> <p class="svelte-121hp7c"><strong>Optimasi Konten</strong>: </p><ul dir="auto"><li class="text-start"> Judul halaman yang lebih deskriptif</li><li class="text-start"> Alt text untuk semua gambar</li><li class="text-start"> Struktur heading yang semantik (h1, h2, h3)</li><li class="text-start"> Penggunaan elemen <code class="cursor-pointer codespan">&lt;main&gt;</code> untuk konten utama</li> </ul></li><li class="text-start"> <p class="svelte-121hp7c"><strong>Link Eksternal</strong>: </p><ul dir="auto"><li class="text-start"> Canonical URL untuk mencegah duplikat konten</li><li class="text-start"> Link ke sitemap dan kebijakan privasi</li> </ul></li><li class="text-start"> <p class="svelte-121hp7c"><strong>Favicon</strong>: </p><ul dir="auto"><li class="text-start"> Referensi ke favicon dan apple-touch-icon</li> </ul></li><li class="text-start"> <p class="svelte-121hp7c"><strong>URL yang SEO-friendly</strong>: </p><ul dir="auto"><li class="text-start"> Menggunakan URL yang deskriptif dan mudah dibaca</li> </ul></li> </ol><div class="my-2 "></div><p dir="auto" class="svelte-121hp7c">Untuk membuat website ini benar-benar dapat ditemukan, Anda juga perlu: </p><div class="my-2 "></div><ol start="1" dir="auto"><li class="text-start"> Mengupload website ini ke hosting dengan domain yang sesuai</li><li class="text-start"> Mengirimkan sitemap ke Google Search Console</li><li class="text-start"> Mendaftarkan website ke direktori pendidikan lokal</li><li class="text-start"> Membangun backlink dari website sekolah dan lembaga pendidikan lainnya</li><li class="text-start"> Memperbarui konten secara berkala</li><li class="text-start"> Mengganti placeholder URL dengan URL website yang sebenarnya</li> </ol><div class="my-2 "></div><p dir="auto" class="svelte-121hp7c">Website ini sekarang sudah dioptimalkan untuk mesin pencari dan akan lebih mudah ditemukan oleh orang lain. </p></div>   </div></div></div> <div class="flex overflow-x-auto justify-start mt-0.5 text-gray-600 buttons dark:text-gray-500 svelte-1u5gq5j"> <div aria-label="Copy" class="flex"><button class="visible p-1.5 hover:bg-black/5 dark:hover:bg-white/5 rounded-lg dark:hover:text-white hover:text-black transition copy-response-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18" stroke-width="1.5" stroke="currentColor" class="size-4 dark:hover:text-white hover:text-black"><g id="å¤åˆ¶_copy (6) 1"><path id="Vector" d="M4.875 4.66161V2.92944C4.875 2.34696 5.3472 1.87476 5.92969 1.87476H15.0703C15.6528 1.87476 16.125 2.34696 16.125 2.92944V12.0701C16.125 12.6526 15.6528 13.1248 15.0703 13.1248H13.3186" stroke-linecap="round" stroke-linejoin="round"></path><path id="Vector_2" d="M12.0703 4.87476H2.92969C2.3472 4.87476 1.875 5.34696 1.875 5.92944V15.0701C1.875 15.6526 2.3472 16.1248 2.92969 16.1248H12.0703C12.6528 16.1248 13.125 15.6526 13.125 15.0701V5.92944C13.125 5.34696 12.6528 4.87476 12.0703 4.87476Z" stroke-linejoin="round"></path></g></svg></button></div>   <div aria-label="Regenerate" class="flex"><button type="button" class="visible p-1.5 hover:bg-black/5 dark:hover:bg-white/5 rounded-lg dark:hover:text-white hover:text-black transition regenerate-response-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-4"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"></path></svg></button></div>   </div></div></div></div></div></div> <div class="pb-12"></div> </div></div></div></div> <div class="px-3 pb-3"> <div class="w-full messageInputContainer font-primary"><div class="flex inset-x-0 justify-center mx-auto bg-transparent"><div class="flex flex-col px-3 max-w-6xl w-full"><div class="relative"></div></div></div> <div class="transparent"><div class="max-w-[960px] bg-transparent mx-auto inset-x-0"><div class=""><input type="file" hidden="" multiple="" accept=".pdf,.docx,.doc,.xls,.xlsx,.ppt,.pptx,.png,.jpg,.jpeg,.csv,.py,.txt,.md,.bmp,.gif"> <form class="flex gap-1.5 w-full"><div class="flex-1 flex flex-col relative w-full rounded-xl border-b-2 border-black/20 dark:border-white/10 transition bg-white/90 dark:bg-[#26282A] dark:text-gray-100" dir="auto"> <div class="overflow-hidden relative px-2.5"><div class="absolute py-2 select-none flagsContainer z-1" style="transform: translateY(0px);"></div> <textarea id="chat-input" dir="auto" rows="3" class="px-1 pt-3 w-full text-sm bg-transparent resize-none scrollbar-hidden dark:text-gray-100 outline-hidden dark:placeholder:text-white/40" placeholder="Send a Message" style="text-indent: 0px; height: 72px;"></textarea></div> <div class="flex justify-between items-center mx-3.5 mt-1.5 mb-3.5 max-w-full" dir="ltr"><div class="self-end flex items-center flex-1 max-w-[80%] gap-1.5"><div aria-label="Up to 10 files, Max 50 MB per file" class="flex"><div role="button" tabindex="0"><button class="border rounded-lg border-black/10 dark:border-white/10 bg-transparent transition p-1.5 outline-hidden focus:outline-hidden hover:bg-gray-100 text-gray-800 dark:text-white dark:hover:bg-gray-800" type="button" aria-label="More"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5"><path d="M10.75 4.75a.75.75 0 0 0-1.5 0v4.5h-4.5a.75.75 0 0 0 0 1.5h4.5v4.5a.75.75 0 0 0 1.5 0v-4.5h4.5a.75.75 0 0 0 0-1.5h-4.5v-4.5Z"></path></svg></button></div></div>  <div class="flex gap-[8px] items-center overflow-x-auto scrollbar-none flex-1"><button aria-controls="mSLu8rL_I3" aria-expanded="false" data-state="closed" id="Z2lJzdKjvV" tabindex="0" data-melt-dropdown-menu-trigger="" data-menu-trigger="" type="button" disabled="" data-disabled="" aria-disabled="true"><div aria-label="Enable or disable search" class="flex"><button type="button" class="flex items-center text-sm rounded-lg border transition-colors duration-300 focus:outline-hidden max-w-full overflow-hidden disabled:cursor-not-allowed bg-transparent  dark:text-gray-300 border-black/10 dark:border-[#3C3E3F] hover:bg-gray-100 dark:hover:bg-gray-800 "><div class="flex items-center gap-1.5 px-2 @xl:px-3 py-1.5"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"></path></svg> <span class="hidden @xl:block whitespace-nowrap overflow-hidden text-ellipsis translate-y-[0.5px]">Web Search</span></div> </button></div></button>   <div aria-label="The current scenario cannot be cancelled" class="flex"><button disabled="" data-autothink="true" class="flex gap-1.5 items-center px-2.5 py-1.5 text-sm rounded-lg border border-black/10 dark:border-white/10 data-[autoThink=true]:bg-[#DAEEFF] data-[autoThink=false]:hover:bg-black/5 data-[autoThink=false]:dark:hover:bg-white/5 bg-transparent transition-all disabled:cursor-not-allowed disabled:hover:bg-none disabled:text-gray-500 dark:text-white/80 data-[autoThink=true]:dark:bg-white/10 data-[autoThink=true]:border-[#0068E00A] data-[autoThink=true]:dark:border-white/10 data-[autoThink=true]:dark:text-white data-[autoThink=true]:dark:disabled:bg-gray-600 data-[autoThink=true]:dark:disabled:text-gray-500 data-[autoThink=false]:dark:disabled:bg-gray-600 data-[autoThink=false]:dark:disabled:text-gray-500"><svg class="size-4" stroke-width="1.5" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="åœ°çƒä»ª_earth 2" opacity="0.8"><path id="Union" d="M2.08147 2.66759C3.39178 1.1939 5.62652 1.00408 7.16643 2.23595L7.43792 2.45275L7.53851 2.55236C7.74657 2.80259 7.75853 3.17308 7.54729 3.43712C7.33612 3.70107 6.97181 3.77153 6.68206 3.62365L6.56292 3.5465L6.29143 3.3297C5.33311 2.5631 3.9427 2.68102 3.12737 3.59826C2.25007 4.58541 2.37929 6.10624 3.41058 6.93126L5.93792 8.95275L6.03851 9.05236C6.24657 9.30259 6.25853 9.67308 6.04729 9.93712C5.83612 10.2011 5.47181 10.2715 5.18206 10.1236L5.06292 10.0465L2.53558 8.02404C0.878471 6.69807 0.671455 4.25386 2.08147 2.66759ZM8.00042 7.49962C8.55249 7.49988 9.00042 7.9475 9.00042 8.49962C9.0002 9.05156 8.55235 9.49937 8.00042 9.49962C7.44827 9.49962 7.00064 9.05172 7.00042 8.49962C7.00042 7.94734 7.44813 7.49962 8.00042 7.49962Z" fill="currentColor"></path><path id="Vector 2665" d="M7 6L9.02186 3.47268C10.0973 2.12831 12.08 1.95997 13.3667 3.10376V3.10376C14.5624 4.16657 14.7163 5.97958 13.717 7.22878L13.5 7.5" stroke="currentColor" stroke-linecap="round"></path><path id="Vector 2664" d="M10.5 7.5L13.0273 9.52186C14.3717 10.5973 14.54 12.58 13.3962 13.8667V13.8667C12.3334 15.0624 10.5204 15.2163 9.27122 14.217L9 14" stroke="currentColor" stroke-linecap="round"></path><path id="Vector 2666" d="M9 11L6.97814 13.5273C5.90265 14.8717 3.92003 15.04 2.63327 13.8962V13.8962C1.43761 12.8334 1.28367 11.0204 2.28302 9.77122L2.5 9.5" stroke="currentColor" stroke-linecap="round"></path></g></svg> <span>Deep Think</span></button></div> </div></div> <div class="flex self-end space-x-1 shrink-0"><div class="flex items-center"><div aria-label="Send Message" class="flex"><button id="send-message-button" class="sendMessageButton text-white bg-gray-200 dark:text-white/40 dark:bg-gray-500 disabled transition rounded-lg p-2 self-center" type="submit" disabled=""><svg class="size-4.25" stroke-width="1.5" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="å‘é€1_send-one 1" clip-path="url(#clip0_1243_3321)"><path id="Vector" d="M7.99946 1.50005L2.29635 13.5283L7.82816 9.72781L13.4678 13.5283L7.99946 1.50005Z" stroke="currentColor" stroke-linejoin="round"></path></g><defs><clippath id="clip0_1243_3321"><rect width="16" height="16" fill="currentColor"></rect></clippath></defs></svg></button></div></div></div></div></div></form></div></div></div></div>  <div class="absolute right-0 left-0 bottom-1 text-xs text-center text-gray-500 line-clamp-1"></div></div></div></div> <div role="separator" tabindex="0" data-direction="horizontal" data-pane-group-id="KACsXL9bx9" data-enabled="true" data-pane-resizer-id="4uwNOfcfJY" data-pane-resizer="" class="flex relative justify-center items-center w-2 bg-background group" style="cursor: ew-resize; touch-action: none; user-select: none;"><div class="flex z-10 justify-center items-center w-5 h-7 rounded-xl"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 animate-pulse hover:animate-[pulse_0.2s_ease-in-out_infinite]"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 12.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 18.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5Z"></path></svg></div></div> <div data-pane="" data-pane-id="5JyxTOb3EW" data-pane-group-id="KACsXL9bx9" class=" shadow-[0_0_16px_0_#0000000A]" style="flex: 67 1 0px; overflow: hidden;"><div class="flex relative min-h-full max-h-full"><div class="w-full  z-40 pointer-events-auto overflow-y-auto scrollbar-hidden"><div class="@container w-full h-full relative flex flex-col bg-white dark:bg-[#26282A]"><div class="flex overflow-hidden gap-2 justify-between items-center px-4 py-3 w-full artifactsHeader border-b-1 border-black/10"><div class="flex flex-1 gap-2 items-center shrink-1"><div class="flex z-50 gap-2 items-center font-medium whitespace-nowrap pointer-events-none shrink-1"><svg class="size-5" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" stroke-width="1.5"><path fill="currentColor" d="M64 853.312V170.688q0-35.392 24.96-60.352 25.024-24.96 60.352-24.96h256c12.672 0 24.704 5.568 32.768 15.36l93.888 112.64h342.72q35.328 0 60.288 24.96 25.024 24.96 25.024 60.352v554.624q0 35.392-24.96 60.352-25.024 24.96-60.352 24.96H149.312q-35.328 0-60.288-24.96Q64 888.704 64 853.312z m810.688 0V298.688H512a42.688 42.688 0 0 1-32.768-15.36L385.28 170.688H149.312v682.624h725.376z"></path><path fill="currentColor" d="M268.48 652.48L345.024 576 268.48 499.52a42.688 42.688 0 1 1 60.352-60.352l106.688 106.688a42.688 42.688 0 0 1 0 60.288l-106.688 106.688a42.688 42.688 0 1 1-60.352-60.352zM554.688 725.312h170.624a42.688 42.688 0 1 0 0-85.312H554.688a42.688 42.688 0 0 0 0 85.312z"></path></svg> <span>File</span></div></div> <div class="flex z-50 flex-1 gap-2 justify-end items-center shrink-1"><button aria-controls="gRcbbDZ9Hs" aria-expanded="false" data-state="closed" id="U-jpkBM73q" tabindex="0" data-melt-dropdown-menu-trigger="" data-menu-trigger="" type="button" class="flex justify-center items-center"><button><button class="flex items-center gap-1 text-sm text-white whitespace-nowrap py-2 px-3 rounded-lg font-medium button-gradient dark:bg-[#484A58] svelte-56cskk"><svg width="16" height="16" viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg" class="size-4 inline" stroke-width="1.33333"><g><path d="M11.6667 5.33333C12.5871 5.33333 13.3333 4.58713 13.3333 3.66667C13.3333 2.74619 12.5871 2 11.6667 2C10.7462 2 10 2.74619 10 3.66667C10 4.58713 10.7462 5.33333 11.6667 5.33333Z" stroke="currentColor" stroke-linejoin="round"></path><path d="M4.3339 9.66683C5.25437 9.66683 6.00057 8.92063 6.00057 8.00016C6.00057 7.0797 5.25437 6.3335 4.3339 6.3335C3.41344 6.3335 2.66724 7.0797 2.66724 8.00016C2.66724 8.92063 3.41344 9.66683 4.3339 9.66683Z" stroke="currentColor" stroke-linejoin="round"></path><path d="M10 4.5249L5.77966 7.08187" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.7793 8.85449L10.2261 11.4822" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11.6667 10.6665C12.5871 10.6665 13.3333 11.4127 13.3333 12.3332C13.3333 13.2536 12.5871 13.9998 11.6667 13.9998C10.7462 13.9998 10 13.2536 10 12.3332C10 11.4127 10.7462 10.6665 11.6667 10.6665Z" stroke="currentColor" stroke-linejoin="round"></path></g></svg> <span>Share</span></button></button></button>  <div aria-label="Edit" class="flex"><button class="p-1.5 rounded-lg hover:bg-black/5 dark:hover:bg-white/5 cursor-not-allowed text-gray-400 dark:text-gray-600" disabled=""><svg class="size-5" stroke-width="2" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200"><path d="M656 135.338667l230.912 230.954666-430.165333 430.122667h428.842666v85.333333H140.544v-230.912L656 135.338667z m-134.826667 255.402666l-295.338666 295.424v110.250667h110.250666l295.381334-295.381333-110.250667-110.293334z m134.826667-134.698666L581.546667 330.410667l110.250666 110.250666 74.453334-74.368L656 256z" fill="currentColor"></path></svg></button></div> <div aria-label="Open Website" class="flex"><button class="p-1.5 rounded-lg hover:bg-black/5 dark:hover:bg-white/5"><svg class="size-5" stroke-width="2" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200"><path d="M664.896 359.104a35.2 35.2 0 0 1 8.512 36.032l-64 192a35.2 35.2 0 0 1-22.272 22.272l-192 64a35.2 35.2 0 0 1-44.544-44.544l64-192a35.2 35.2 0 0 1 22.272-22.272l192-64a35.2 35.2 0 0 1 36.032 8.512zM475.84 475.84L439.68 584.32l108.48-36.16 36.16-108.48-108.48 36.16z" fill="currentColor"></path><path d="M512 819.2a307.2 307.2 0 1 0 0-614.4 307.2 307.2 0 0 0 0 614.4zM896 512A384 384 0 1 1 128 512a384 384 0 0 1 768 0z" fill="currentColor"></path></svg></button></div>  <div class="bg-black/10 dark:bg-gray-700 min-h-4 w-[1px] shrink-0 h-6" role="separator" aria-orientation="vertical"></div> <button class="self-center p-1 bg-white rounded pointer-events-auto dark:bg-gray-850 hover:bg-black/5 dark:hover:bg-white/5"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-5 text-gray-900 dark:text-white"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"></path></svg></button></div></div> <div class="overflow-hidden relative flex-1"> <div class="flex-1 w-full h-full artifactsContainer svelte-1ddqz9p"><div class="flex relative h-full"><div class="flex absolute top-0 left-0 px-4 py-3 artifactsActions z-11 svelte-1ddqz9p"><div class=""><div data-orientation="horizontal" data-melt-tabs="" data-tabs-root="" class="rounded-full artifactTabs text-sm border-1 border-black/10 dark:border-white/10"><div role="tablist" aria-orientation="horizontal" data-orientation="horizontal" data-melt-tabs-list="" data-tabs-list="" class="flex gap-1 rounded-full bg-white p-0.5 dark:bg-[#16181A] text-nowrap"><button type="button" role="tab" data-state="inactive" tabindex="-1" data-value="preview" data-orientation="horizontal" data-melt-tabs-trigger="" data-tabs-trigger="" class="tabTrigger flex items-center rounded-full min-w-16 bg-transparent px-4 py-1.5 data-[state=active]:bg-black dark:data-[state=active]:bg-white data-[state=active]:text-white dark:data-[state=active]:text-black font-semibold hover:bg-black/5 dark:hover:bg-white/5 transition text-sm text-black/40 dark:text-white/40"> <span>Preview</span>  </button><button type="button" role="tab" data-state="active" tabindex="0" data-value="code" data-orientation="horizontal" data-melt-tabs-trigger="" data-tabs-trigger="" class="tabTrigger flex items-center rounded-full min-w-16 bg-transparent px-4 py-1.5 data-[state=active]:bg-black dark:data-[state=active]:bg-white data-[state=active]:text-white dark:data-[state=active]:text-black font-semibold hover:bg-black/5 dark:hover:bg-white/5 transition text-sm text-black/40 dark:text-white/40"> <span>Code</span>  </button></div></div></div></div> <div class="flex absolute top-0 right-0 px-4 py-3 artifactsActions z-11 svelte-1ddqz9p"><button class="flex gap-2 items-center px-5 py-2 text-sm bg-white rounded-full border-none shadow-lg transition hover:bg-gray-100 dark:bg-gray-850 dark:hover:bg-gray-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18" stroke-width="1.5" stroke="currentColor" class="size-4 inline"><g id="å¤åˆ¶_copy (6) 1"><path id="Vector" d="M4.875 4.66161V2.92944C4.875 2.34696 5.3472 1.87476 5.92969 1.87476H15.0703C15.6528 1.87476 16.125 2.34696 16.125 2.92944V12.0701C16.125 12.6526 15.6528 13.1248 15.0703 13.1248H13.3186" stroke-linecap="round" stroke-linejoin="round"></path><path id="Vector_2" d="M12.0703 4.87476H2.92969C2.3472 4.87476 1.875 5.34696 1.875 5.92944V15.0701C1.875 15.6526 2.3472 16.1248 2.92969 16.1248H12.0703C12.6528 16.1248 13.125 15.6526 13.125 15.0701V5.92944C13.125 5.34696 12.6528 4.87476 12.0703 4.87476Z" stroke-linejoin="round"></path></g></svg> <span class="">Copy</span></button></div> <div class="w-full max-w-full h-full"><div id="code-textarea-375267e4-1ae9-41e4-a9da-78cf7906f6a7" class="h-full w-full"><div class="cm-editor ͼ1 ͼ2 ͼ4 ͼ5v ͼ5k"><div class="cm-announced" aria-live="polite"></div><div tabindex="-1" class="cm-scroller"><div class="cm-gutters" aria-hidden="true" style="min-height: 8553.6px; position: sticky;"><div class="cm-gutter cm-lineNumbers"><div class="cm-gutterElement" style="height: 0px; visibility: hidden; pointer-events: none;">999</div><div class="cm-gutterElement cm-activeLineGutter" style="height: 19.6px; margin-top: 4px;">1</div><div class="cm-gutterElement" style="height: 19.6px;">2</div><div class="cm-gutterElement" style="height: 19.6px;">3</div><div class="cm-gutterElement" style="height: 19.6px;">4</div><div class="cm-gutterElement" style="height: 19.6px;">5</div><div class="cm-gutterElement" style="height: 19.6px;">6</div><div class="cm-gutterElement" style="height: 19.6px;">7</div><div class="cm-gutterElement" style="height: 19.6px;">8</div><div class="cm-gutterElement" style="height: 19.6px;">9</div><div class="cm-gutterElement" style="height: 19.6px;">10</div><div class="cm-gutterElement" style="height: 19.6px;">11</div><div class="cm-gutterElement" style="height: 19.6px;">12</div><div class="cm-gutterElement" style="height: 19.6px;">13</div><div class="cm-gutterElement" style="height: 19.6px;">14</div><div class="cm-gutterElement" style="height: 19.6px;">15</div><div class="cm-gutterElement" style="height: 19.6px;">16</div><div class="cm-gutterElement" style="height: 19.6px;">17</div><div class="cm-gutterElement" style="height: 19.6px;">18</div><div class="cm-gutterElement" style="height: 19.6px;">19</div><div class="cm-gutterElement" style="height: 19.6px;">20</div><div class="cm-gutterElement" style="height: 19.6px;">21</div><div class="cm-gutterElement" style="height: 19.6px;">22</div><div class="cm-gutterElement" style="height: 19.6px;">23</div><div class="cm-gutterElement" style="height: 19.6px;">24</div><div class="cm-gutterElement" style="height: 19.6px;">25</div><div class="cm-gutterElement" style="height: 19.6px;">26</div><div class="cm-gutterElement" style="height: 19.6px;">27</div><div class="cm-gutterElement" style="height: 19.6px;">28</div><div class="cm-gutterElement" style="height: 19.6px;">29</div><div class="cm-gutterElement" style="height: 19.6px;">30</div><div class="cm-gutterElement" style="height: 19.6px;">31</div><div class="cm-gutterElement" style="height: 19.6px;">32</div><div class="cm-gutterElement" style="height: 19.6px;">33</div><div class="cm-gutterElement" style="height: 19.6px;">34</div><div class="cm-gutterElement" style="height: 19.6px;">35</div><div class="cm-gutterElement" style="height: 19.6px;">36</div></div><div class="cm-gutter cm-foldGutter"><div class="cm-gutterElement" style="height: 0px; visibility: hidden; pointer-events: none;"><span title="Unfold line">›</span></div><div class="cm-gutterElement cm-activeLineGutter" style="height: 19.6px; margin-top: 4px;"></div><div class="cm-gutterElement" style="height: 19.6px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement" style="height: 19.6px;"><span title="Fold line">⌄</span></div></div></div><div spellcheck="false" autocorrect="off" autocapitalize="off" writingsuggestions="false" translate="no" contenteditable="false" style="tab-size: 4;" class="cm-content" role="textbox" aria-multiline="true" data-language="html" aria-autocomplete="list"><div class="cm-activeLine cm-line">&lt;!DOCTYPE html&gt;</div><div class="cm-line">&lt;<span class="ͼ5o">html</span> <span class="ͼ5m">lang</span><span class="ͼ5q">=</span><span class="ͼ5p">"id"</span>&gt;</div><div class="cm-line">&lt;<span class="ͼ5o">head</span>&gt;</div><div class="cm-line">    &lt;<span class="ͼ5o">meta</span> <span class="ͼ5m">charset</span><span class="ͼ5q">=</span><span class="ͼ5p">"UTF-8"</span>&gt;</div><div class="cm-line">    &lt;<span class="ͼ5o">meta</span> <span class="ͼ5m">name</span><span class="ͼ5q">=</span><span class="ͼ5p">"viewport"</span> <span class="ͼ5m">content</span><span class="ͼ5q">=</span><span class="ͼ5p">"width=device-width, initial-scale=1.0"</span>&gt;</div><div class="cm-line">    &lt;<span class="ͼ5o">title</span>&gt;Kelas 10 TKJ 2 - SMK SHIFA' KALIPARE | Teknik Komputer dan Jaringan&lt;/<span class="ͼ5o">title</span>&gt;</div><div class="cm-line">    </div><div class="cm-line">    <span class="ͼ5l">&lt;!-- Meta Tags SEO --&gt;</span></div><div class="cm-line">    &lt;<span class="ͼ5o">meta</span> <span class="ͼ5m">name</span><span class="ͼ5q">=</span><span class="ͼ5p">"description"</span> <span class="ͼ5m">content</span><span class="ͼ5q">=</span><span class="ͼ5p">"Kelas 10 Teknik Komputer dan Jaringan 2 di SMK SHIFA' KALIPARE. Fokus pada pemrograman, jaringan komputer, dan keamanan siber. Temukan informasi lengkap tentang prestasi, struktur organisasi, dan kegiatan kelas kami."</span>&gt;</div><div class="cm-line">    &lt;<span class="ͼ5o">meta</span> <span class="ͼ5m">name</span><span class="ͼ5q">=</span><span class="ͼ5p">"keywords"</span> <span class="ͼ5m">content</span><span class="ͼ5q">=</span><span class="ͼ5p">"TKJ, Teknik Komputer dan Jaringan, SMK SHIFA' KALIPARE, Kelas 10 TKJ 2, pemrograman, jaringan komputer, keamanan siber, prestasi siswa"</span>&gt;</div><div class="cm-line">    &lt;<span class="ͼ5o">meta</span> <span class="ͼ5m">name</span><span class="ͼ5q">=</span><span class="ͼ5p">"author"</span> <span class="ͼ5m">content</span><span class="ͼ5q">=</span><span class="ͼ5p">"Kelas 10 TKJ 2 - SMK SHIFA' KALIPARE"</span>&gt;</div><div class="cm-line">    &lt;<span class="ͼ5o">meta</span> <span class="ͼ5m">name</span><span class="ͼ5q">=</span><span class="ͼ5p">"robots"</span> <span class="ͼ5m">content</span><span class="ͼ5q">=</span><span class="ͼ5p">"index, follow"</span>&gt;</div><div class="cm-line">    &lt;<span class="ͼ5o">meta</span> <span class="ͼ5m">name</span><span class="ͼ5q">=</span><span class="ͼ5p">"language"</span> <span class="ͼ5m">content</span><span class="ͼ5q">=</span><span class="ͼ5p">"Indonesian"</span>&gt;</div><div class="cm-line">    &lt;<span class="ͼ5o">meta</span> <span class="ͼ5m">name</span><span class="ͼ5q">=</span><span class="ͼ5p">"geo.region"</span> <span class="ͼ5m">content</span><span class="ͼ5q">=</span><span class="ͼ5p">"ID-JI"</span>&gt;</div><div class="cm-line">    &lt;<span class="ͼ5o">meta</span> <span class="ͼ5m">name</span><span class="ͼ5q">=</span><span class="ͼ5p">"geo.placename"</span> <span class="ͼ5m">content</span><span class="ͼ5q">=</span><span class="ͼ5p">"Kalipare"</span>&gt;</div><div class="cm-line">    &lt;<span class="ͼ5o">link</span> <span class="ͼ5m">rel</span><span class="ͼ5q">=</span><span class="ͼ5p">"canonical"</span> <span class="ͼ5m">href</span><span class="ͼ5q">=</span><span class="ͼ5p">"https://smkshifakalipare.sch.id/kelas10tkj2"</span>&gt;</div><div class="cm-line">    </div><div class="cm-line">    <span class="ͼ5l">&lt;!-- Open Graph Meta Tags --&gt;</span></div><div class="cm-line">    &lt;<span class="ͼ5o">meta</span> <span class="ͼ5m">property</span><span class="ͼ5q">=</span><span class="ͼ5p">"og:title"</span> <span class="ͼ5m">content</span><span class="ͼ5q">=</span><span class="ͼ5p">"Kelas 10 TKJ 2 - SMK SHIFA' KALIPARE"</span>&gt;</div><div class="cm-line">    &lt;<span class="ͼ5o">meta</span> <span class="ͼ5m">property</span><span class="ͼ5q">=</span><span class="ͼ5p">"og:description"</span> <span class="ͼ5m">content</span><span class="ͼ5q">=</span><span class="ͼ5p">"Kelas 10 Teknik Komputer dan Jaringan 2 di SMK SHIFA' KALIPARE. Fokus pada pemrograman, jaringan komputer, dan keamanan siber."</span>&gt;</div><div class="cm-line">    &lt;<span class="ͼ5o">meta</span> <span class="ͼ5m">property</span><span class="ͼ5q">=</span><span class="ͼ5p">"og:type"</span> <span class="ͼ5m">content</span><span class="ͼ5q">=</span><span class="ͼ5p">"website"</span>&gt;</div><div class="cm-line">    &lt;<span class="ͼ5o">meta</span> <span class="ͼ5m">property</span><span class="ͼ5q">=</span><span class="ͼ5p">"og:url"</span> <span class="ͼ5m">content</span><span class="ͼ5q">=</span><span class="ͼ5p">"https://smkshifakalipare.sch.id/kelas10tkj2"</span>&gt;</div><div class="cm-line">    &lt;<span class="ͼ5o">meta</span> <span class="ͼ5m">property</span><span class="ͼ5q">=</span><span class="ͼ5p">"og:image"</span> <span class="ͼ5m">content</span><span class="ͼ5q">=</span><span class="ͼ5p">"https://smkshifakalipare.sch.id/images/kelas10tkj2-og.jpg"</span>&gt;</div><div class="cm-line">    &lt;<span class="ͼ5o">meta</span> <span class="ͼ5m">property</span><span class="ͼ5q">=</span><span class="ͼ5p">"og:site_name"</span> <span class="ͼ5m">content</span><span class="ͼ5q">=</span><span class="ͼ5p">"Kelas 10 TKJ 2 - SMK SHIFA' KALIPARE"</span>&gt;</div><div class="cm-line">    &lt;<span class="ͼ5o">meta</span> <span class="ͼ5m">property</span><span class="ͼ5q">=</span><span class="ͼ5p">"og:locale"</span> <span class="ͼ5m">content</span><span class="ͼ5q">=</span><span class="ͼ5p">"id_ID"</span>&gt;</div><div class="cm-line">    </div><div class="cm-line">    <span class="ͼ5l">&lt;!-- Twitter Card Meta Tags --&gt;</span></div><div class="cm-line">    &lt;<span class="ͼ5o">meta</span> <span class="ͼ5m">name</span><span class="ͼ5q">=</span><span class="ͼ5p">"twitter:card"</span> <span class="ͼ5m">content</span><span class="ͼ5q">=</span><span class="ͼ5p">"summary_large_image"</span>&gt;</div><div class="cm-line">    &lt;<span class="ͼ5o">meta</span> <span class="ͼ5m">name</span><span class="ͼ5q">=</span><span class="ͼ5p">"twitter:title"</span> <span class="ͼ5m">content</span><span class="ͼ5q">=</span><span class="ͼ5p">"Kelas 10 TKJ 2 - SMK SHIFA' KALIPARE"</span>&gt;</div><div class="cm-line">    &lt;<span class="ͼ5o">meta</span> <span class="ͼ5m">name</span><span class="ͼ5q">=</span><span class="ͼ5p">"twitter:description"</span> <span class="ͼ5m">content</span><span class="ͼ5q">=</span><span class="ͼ5p">"Kelas 10 Teknik Komputer dan Jaringan 2 di SMK SHIFA' KALIPARE. Fokus pada pemrograman, jaringan komputer, dan keamanan siber."</span>&gt;</div><div class="cm-line">    &lt;<span class="ͼ5o">meta</span> <span class="ͼ5m">name</span><span class="ͼ5q">=</span><span class="ͼ5p">"twitter:image"</span> <span class="ͼ5m">content</span><span class="ͼ5q">=</span><span class="ͼ5p">"https://smkshifakalipare.sch.id/images/kelas10tkj2-twitter.jpg"</span>&gt;</div><div class="cm-line">    </div><div class="cm-line">    <span class="ͼ5l">&lt;!-- Favicon --&gt;</span></div><div class="cm-line">    &lt;<span class="ͼ5o">link</span> <span class="ͼ5m">rel</span><span class="ͼ5q">=</span><span class="ͼ5p">"icon"</span> <span class="ͼ5m">type</span><span class="ͼ5q">=</span><span class="ͼ5p">"image/x-icon"</span> <span class="ͼ5m">href</span><span class="ͼ5q">=</span><span class="ͼ5p">"https://smkshifakalipare.sch.id/favicon.ico"</span>&gt;</div><div class="cm-line">    &lt;<span class="ͼ5o">link</span> <span class="ͼ5m">rel</span><span class="ͼ5q">=</span><span class="ͼ5p">"apple-touch-icon"</span> <span class="ͼ5m">href</span><span class="ͼ5q">=</span><span class="ͼ5p">"https://smkshifakalipare.sch.id/apple-touch-icon.png"</span>&gt;</div><div class="cm-line">    </div><div class="cm-gap" style="height: 7840px;"></div></div><div class="cm-layer cm-layer-above cm-cursorLayer" aria-hidden="true" style="z-index: 150; animation-duration: 1200ms;"><div class="cm-cursor cm-cursor-primary" style="left: 55.6px; top: 5.6px; height: 16px;"></div></div><div class="cm-layer cm-selectionLayer" aria-hidden="true" style="z-index: -2;"></div></div></div></div></div></div></div></div></div></div> </div></div></div> </div>   </div></div>  <div id="svelte-announcer" aria-live="assertive" aria-atomic="true" style="position: absolute; left: 0px; top: 0px; clip: rect(0px, 0px, 0px, 0px); clip-path: inset(50%); overflow: hidden; white-space: nowrap; width: 1px; height: 1px;">Z.ai Chat - Free AI powered by GLM-4.6 &amp; GLM-4.5</div></div>
+
+		
+	
+
+
+<style type="text/css" nonce="">
+	html {
+		overflow-y: hidden !important;
+	}
+
+	#splash-screen {
+		background: #F4F6F8;
+	}
+
+	html.dark #splash-screen {
+		background: #141618;
+	}
+
+	#progress-background {
+		display: none;
+	}
+
+	#progress-bar {
+		display: none;
+	}
+
+	html.her #logo {
+		display: none;
+	}
+
+	html.her #progress-background {
+		display: block;
+	}
+
+	html.her #progress-bar {
+		display: block;
+	}
+
+	@media (max-width: 24rem) {
+		html.her #progress-background {
+			display: none;
+		}
+
+		html.her #progress-bar {
+			display: none;
+		}
+	}
+
+	@keyframes pulse {
+		50% {
+			opacity: 0.65;
+		}
+	}
+
+	.animate-pulse-fast {
+		animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+	}
+</style>
+<div class="drawer-portal"><div class="fixed z-9999 bg-white dark:bg-gray-850 shadow-lg transition-transform duration-300 ease-in-out rounded-t-2xl" style="left: auto;right: auto;top: auto;bottom: 0;width: 100vw;height: 73%;transform: translateY(150%)"></div></div></body></html>
